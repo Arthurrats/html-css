@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes Externas</title>
+    <style>
+        /*
+        Tipos de format()
+        - opentype (otf)
+        - truetype (ttf)
+        - embedded-opentype 
+        - true-type (Apple Advenced Typography)
+        - sgv
+        */
+        @font-face {
+            font-family: 'love' ;
+            src: url('fonts/Mf Love Song.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
+        body {
+            font-family: love, Helvetica, sans-serif;
+        }
+        h1{
+            font-family: love, Helvetica, sans-serif;
+            font-size: 3em;
+            font-weight: normal;
+            color: red;
+        }
+        p{
+            font-family: love, Helvetica, sans-serif;
+            color: rgba(188, 25, 25, 0.705);
+        }
+    </style>
+</head>
+<body>
+    <h1>Título</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus fugiat sequi ipsum sunt itaque est quod quaerat molestiae quos voluptatibus atque praesentium libero, consectetur quia nisi excepturi odit et distinctio!</p>
+</body>
+</html>
