@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Inscrição</title>
+    <style>
+        body{
+            max-width: 400px;
+            margin: auto;
+            background-color: beige;
+        }
+        fieldset{
+            background-color: bisque;
+        }
+        p{
+        }
+        input{
+            background-color: rgba(161, 142, 47, 0.381);
+            color: rgb(0, 0, 0);
+        }
+        legend{
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Formulário de Inscrição para o Campeonato</h1>
+    <form action="cadastro.php" method="post" autocomplete="on">
+
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+            <p>
+                <label for="inome">Nome Completo: </label>
+                <input type="text" name="nome" id="inome" minlength="3" required>
+            </p>
+            <p>
+                <label for="iano">Digite o ano de nascimento: </label>
+                <input type="number" name="ano" id="iano" max="2002" value="2000" required>
+            </p>
+            <p>
+                <label for="icpf">Digite o seu CPF: </label>
+                <input type="number" name="cpf" id="icpf" placeholder="xxxxxxxxxxx" minlength="11" required>
+            </p>
+        </fieldset>
+
+        <h2>Uma vaga de esporte para cada atleta</h2>
+
+        <fieldset>
+            <legend>Modalidades Disponíveis:</legend>
+            <input type="checkbox" name="fut" id="ifut"><label for="ifut">Futebol</label>
+            <br>
+            <input type="checkbox" name="bas" id="ibas"><label for="ibas">Basquete</label>
+            <br>
+            <input type="checkbox" name="vol" id="ivol"><label for="ivol">Vôlei</label>
+            <br>
+            <input type="checkbox" name="nat" id="inat"><label for="inat">Natação</label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Sexo</legend>
+            <p>
+                <label for="isxmas">Masculino</label>
+                <input type="radio" name="sexo" id="isxmas">
+                <label for="isxfem">Feminino</label>
+                <input type="radio" name="sexo" id="isxfem">
+                <label for="isxn">Outros</label>
+                <input type="radio" name="sexo" id="isxn">
+            </p>
+        </fieldset>
+
+        <h3>Aceito todos os termos desta inscrição</h3>
+        <fieldset>
+            <p>
+                <label for="iact">Concordo</label>
+                <input type="radio" name="act" id="iact">
+            </p>
+        </fieldset>
+
+        <p>
+            <input type="submit" value="Enviar">
+        </p>
+    </form>
+</body>
+</html>
