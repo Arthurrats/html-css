@@ -1,3 +1,75 @@
 @charset "UTF-8";
 
 /* TODAS AS DEMAIS MÍDIAS */
+
+/* 
+    Typical Device Breakpoint
+    pequenas telas: até 600px
+    celular: 600px até 768px
+    tablet: 768px até 992px
+    desktop: 992px até 1200px
+    grandes telas: acima de 1200px 
+*/
+
+*{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+@media print{
+    body{
+        background-image: url(../imagens/back-print.jpg); /*DESNECESSÁRIO*/
+        text-shadow: none;
+        color: black;
+    }
+
+    main{
+        border: 2px solid black;
+    }
+
+    main::after{
+        content: 'Impressão feita por Arthur Rats';
+    }
+
+    #print{
+        display: block;
+    }
+    #phone{
+        display: none;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px){ /*TABLET*/
+    body{
+        background-image: url(../imagens/back-tablet.jpg);
+    }
+    #tablet{
+        display: block;
+    }
+    #phone{
+        display: none;
+    }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px){ /*DESKTOP*/
+    body{
+        background-image: url(../imagens/back-pc.jpg);
+    }
+    #pc{
+        display: block;
+    }
+    #phone{
+        display: none;
+    }
+}   
+
+@media screen and (min-width: 1200px){ /*GRANDES TELAS*/
+    body{
+        background-image: url(../imagens/back-tv.jpg);
+    }
+    #tv{
+        display: block;
+    }
+    #phone{
+        display: none;
+    }
+}
