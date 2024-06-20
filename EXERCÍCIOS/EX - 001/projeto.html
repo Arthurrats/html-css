@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de Projeto</title>
+    <link rel="stylesheet" href="estilos/mobile.css" media="all">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+</head>
+<body>
+    <main id="main1">
+    </main>
+
+    <main id="main2">
+
+        <section id="section1">
+            <h2>Login</h2>
+            <p>Seja bem-vindo. Faça o login para acessar sua conta e poder fazer as configurações no seu ambiente.</p>
+        </section>
+
+        <section id="section2">
+            <form action="cadastro.php" method="post">
+                <div id="user">
+                    <p>
+                        <label for="iemail"><span class="material-symbols-outlined">Person</span></label>
+                        <input type="email" name="email" id="iemail"  required>
+                    </p>
+                </div>
+
+                <div id="key">
+                    <p>
+                        <label for="isenha"><span class="material-symbols-outlined">key</span></label>
+                        <input type="password" name="senha" id="isenha" required>
+                    </p>
+                </div>
+
+                <p class="botao">
+                    <input type="submit" value="Enviar">
+                </p>
+
+                <p class="botao">
+                    <input type="reset" value="Limpar">
+                </p>
+
+            </form>
+        </section>
+    </main>
+</body>
+</html>
